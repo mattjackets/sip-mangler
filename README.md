@@ -16,4 +16,4 @@ X_FOO_HEADER = "X-Foo: custom-value"
 ```
 
 ## Running
-Once configured, execute sip-mang.py.  Once running, configure your soft phone to point to 127.0.0.1 port 5060 (UDP) rather than the actual SIP server/proxy.  If successful, you should see activity from sip-mang.py and your softphone should register successfully.
+Once configured, execute sip-mang.py.  Once running, configure your soft phone to point to the IP address of the computer running sip-mangler, port 5060 (UDP) rather than the actual SIP server/proxy.  NOTE: Don't use a loopback address, as this address will be used within the following SIP traffic, and you want to ensure that traffic ultimately makes it to your machine.  If successful, you should see activity from sip-mang.py and your softphone should register successfully.
